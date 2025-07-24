@@ -1,5 +1,6 @@
 /* CSS Variables for Theme Management */
 :root {
+<<<<<<< HEAD
   /* Theme colors */
   --primary: #1976d2;
   --secondary: #424242;
@@ -7,6 +8,16 @@
   --bg-primary: #ff0000;
   --text-primary: var(--secondary);
   --border-color: #e0e0e0;
+=======
+  /* Light theme colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #282c34;
+  --text-secondary: #61dafb;
+  --border-color: #e9ecef;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+>>>>>>> parent of 6c4c5f5 (CheckPoint - cg4af71fd7)
 }
 
 [data-theme="dark"] {
@@ -25,96 +36,7 @@
   background-color: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-}
-
-.game-title {
-  color: var(--primary);
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-}
-
-.game-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.game-status {
-  font-size: 1.5rem;
-  color: var(--secondary);
-  height: 2rem;
-}
-
-.game-board {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  background: var(--secondary);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.board-row {
-  display: flex;
-  gap: 5px;
-}
-
-.game-square {
-  width: 80px;
-  height: 80px;
-  background: var(--bg-primary);
-  border: none;
-  border-radius: 4px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary);
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.game-square:hover {
-  background: var(--accent);
-}
-
-.game-actions {
-  margin-top: 1rem;
-}
-
-.game-button {
-  background: var(--primary);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.game-button:hover {
-  opacity: 0.9;
-}
-
-/* Responsive design */
-@media (max-width: 480px) {
-  .game-square {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
-  }
-  
-  .game-title {
-    font-size: 2rem;
-  }
-  
-  .game-status {
-    font-size: 1.2rem;
-  }
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App-logo {
